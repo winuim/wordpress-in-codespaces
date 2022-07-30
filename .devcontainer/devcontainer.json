@@ -1,5 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.241.1/containers/docker-in-docker
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.238.1/containers/docker-in-docker
 {
 	"name": "Docker in Docker",
 	"dockerFile": "Dockerfile",
@@ -28,10 +28,8 @@
 	"remoteUser": "vscode",
 	"build": {
 		"args": {
-			"UPGRADE_PACKAGES": "true"
+			"UPGRADE_PACKAGES": "true",
+			"USE_MOBY": "false"
 		}
-	},
-	"features": {
-		"docker-in-docker": "latest"
 	}
 }
